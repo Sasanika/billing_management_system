@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="root3" prefHeight="518.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.billing.management_system.OrderController">
+   <children>
+      <TableView fx:id="tblList" layoutX="73.0" layoutY="141.0" prefHeight="200.0" prefWidth="425.0">
+        <columns>
+          <TableColumn prefWidth="112.0" text="Name" />
+          <TableColumn prefWidth="75.0" text="QTY" />
+            <TableColumn prefWidth="115.0" text="Unit Price" />
+            <TableColumn prefWidth="122.0" text="Total" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmbIds" layoutX="136.0" layoutY="51.0" onAction="#selectItem" prefHeight="25.0" prefWidth="100.0" promptText="Item Id" />
+      <TextField fx:id="txtName" layoutX="268.0" layoutY="52.0" prefHeight="25.0" prefWidth="90.0" promptText="Name" />
+      <TextField fx:id="txtQty" layoutX="492.0" layoutY="52.0" prefHeight="25.0" prefWidth="76.0" promptText="Qty" />
+      <Button layoutX="274.0" layoutY="101.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="76.0" text="Add" />
+      <Button layoutX="424.0" layoutY="353.0" mnemonicParsing="false" onAction="#placeOrder" prefHeight="25.0" prefWidth="100.0" text="Place Order" />
+      <TextField fx:id="txtUnitPrice" layoutX="389.0" layoutY="52.0" prefHeight="25.0" prefWidth="76.0" promptText="Unit Price" />
+      <TextField fx:id="txtOrderId" layoutX="14.0" layoutY="52.0" prefHeight="25.0" prefWidth="90.0" promptText="Order Id" />
+   </children>
+</AnchorPane>
